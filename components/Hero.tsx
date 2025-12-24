@@ -1,8 +1,6 @@
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 import { MapPinHouse, PhoneCall } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-
-import React from "react";
 
 export default function Hero() {
   return (
@@ -12,7 +10,7 @@ export default function Hero() {
           <div className="flex gap-4 flex-col">
             <div>
               <Badge variant="outline" className="animate-out">
-                Comorian 🇰🇲!
+                Comorian 🇰🇲! coder
               </Badge>
             </div>
             <div className="flex gap-4 flex-col">
@@ -21,7 +19,7 @@ export default function Hero() {
                 <span className="cairo-play-bold">Yassine Hassane.</span>
               </h1>
               <p className="text-xl leading-relaxed tracking-tight text-muted-foreground max-w-md text-left">
-                let's start talk what I can do for you,
+                let is start talk what I can do for you,
               </p>
             </div>
             <div className="flex flex-row gap-4">

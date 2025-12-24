@@ -1,16 +1,14 @@
 import Hero from "@/components/Hero";
-import Timeline from "@/components/Timeline";
-import React from "react";
+import TimeLiner from "@/components/TimeLiner";
+import Tools from "@/components/tools/Tools";
 import { timelineData } from "@/lib/data";
 
 export default function Home() {
   return (
     <>
-      {/* Hero */}
       <Hero />
-
-      {/* Timeline */}
-      <Timeline timelineData={timelineData} />
+      <TimeLiner timelineData={timelineData} />
+      <Tools />
     </>
   );
 }
