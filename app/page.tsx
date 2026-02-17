@@ -9,6 +9,7 @@ export default function Home() {
       <Hero />
       <TimeLiner timelineData={timelineData} />
       <Tools />
+      {/* <Contact /> */}
     </>
   );
 }

@@ -7,7 +7,7 @@ export default function Tools() {
       <div className="w-full py-10">
         {/* title */}
         <div className="container mx-auto py-10 px-4 md:px-8 lg:px-10">
-          <h2 className="text-3xl md:text-5xl cairo-play-bold max-w-lg tracking-tighter text-left dark:text-white">
+          <h2 className="text-3xl md:text-5xl cairo-play-bold max-w-lg tracking-tighter text-left">
             Tools I use on my projects
           </h2>
         </div>

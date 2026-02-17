@@ -10,7 +10,7 @@ export default function Hero() {
           <div className="flex gap-4 flex-col">
             <div>
               <Badge variant="outline" className="animate-out">
-                Comorian 🇰🇲! coder
+                Comorian coder
               </Badge>
             </div>
             <div className="flex gap-4 flex-col">

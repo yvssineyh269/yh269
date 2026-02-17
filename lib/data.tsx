@@ -1,37 +1,85 @@
-import { CheckSquareIcon } from "lucide-react";
+import { CheckSquareIcon, Link2Icon, LinkIcon, Share2Icon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 // -- Timeline data for my professional journey --
 export const timelineData = [
-  // -- Update a portofolio
+  // ================= 2026
+  {
+    title: "Janvier 2026",
+    content: (
+      <div>
+        <p className="text-neutral-800 text-xl md:text-xl font-normal mb-8">
+          Developpement et deploiement d&apos;un protype fonctionnelle{" "}
+          <Link
+            href={"https://anaden.vercel.app"}
+            className="text-emerald-500 font-semibold uppercase"
+          >
+            Anaden
+          </Link>{" "}
+          website from scratch
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
+        </div>
+      </div>
+    ),
+  },
+
   {
     title: "Novembre 2025",
     content: (
       <div>
         <p className="text-neutral-800 text-xl md:text-xl font-normal mb-8">
-          Built and update my portofolio UI and Building a blog app from scratch
+          Mise à jour de l&apos;interface UI de mon portfolio sous format
+          d&apos;un Time line mettant en avant le cours de mes recentes et
+          precedentes réalisations.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <Image
-            src="https://assets.aceternity.com/templates/startup-1.webp"
-            alt="startup template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow_inset_custom]"
-          />
-          <Image
-            src="https://assets.aceternity.com/templates/startup-2.webp"
-            alt="startup template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow_inset_custom]"
-          />
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
         </div>
       </div>
     ),
   },
-  // -- First Job
+
   {
     title: "Avril - Octobre 2025",
     content: (
@@ -50,26 +98,33 @@ export const timelineData = [
           I build a LMS platforme named{" "}
           <Link
             href={"https://sunuschool.net"}
-            className="uppercase font-semibold underline"
+            className="uppercase font-semibold text-emerald-600"
           >
             sunschoool
           </Link>
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <Image
-            src="https://assets.aceternity.com/pro/hero-sections.png"
-            alt="hero template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow_inset_custom"
-          />
-          <Image
-            src="https://assets.aceternity.com/features-section.png"
-            alt="feature template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow_inset_custom"
-          />
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
+
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
         </div>
       </div>
     ),
@@ -80,7 +135,7 @@ export const timelineData = [
     content: (
       <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-xl font-normal mb-4">
-          Deployed 2 new website on vercel
+          J&apos;ai fait une contribution de 4 composants sur universe UI
         </p>
         <div className="mb-8 grid grid-cols-2 gap-4">
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xl md:text-xl">
@@ -88,33 +143,38 @@ export const timelineData = [
             component
           </div>
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xl md:text-xl">
-            <CheckSquareIcon className="bg-green-400 rounded-md" /> Card grid
-            component
+            <CheckSquareIcon className="bg-green-400 rounded-md" />
+            Input Form component
           </div>
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xl md:text-xl">
-            <CheckSquareIcon className="bg-green-400 rounded-md" /> Startup
-            template Aceternity
+            <CheckSquareIcon className="bg-green-400 rounded-md" /> Footer
+            template
           </div>
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xl md:text-xl">
-            <CheckSquareIcon className="bg-green-400 rounded-md" /> Startup
-            template Aceternity
+            <CheckSquareIcon className="bg-green-400 rounded-md" /> Button
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4">
-          <Image
-            src="https://assets.aceternity.com/pro/hero-sections.png"
-            alt="hero template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,42,53,0.06),0_1px_1px_rgba(0,0,0,0.05),0_0_0_1px_rgba(34,42,53,0.04),0_0_4px_rgba(34,42,53,0.08),0_16px_68px_rgba(47,48,55,0.05),0_1px_0_rgba(255,255,255,0.1)_inset]"
-          />
-          <Image
-            src="https://assets.aceternity.com/features-section.png"
-            alt="feature template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,42,53,0.06),0_1px_1px_rgba(0,0,0,0.05),0_0_0_1px_rgba(34,42,53,0.04),0_0_4px_rgba(34,42,53,0.08),0_16px_68px_rgba(47,48,55,0.05),0_1px_0_rgba(255,255,255,0.1)_inset]"
-          />
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
         </div>
       </div>
     ),
@@ -125,20 +185,30 @@ export const timelineData = [
     content: (
       <div>
         <p className="text-neutral-800 font-semibold text-xl md:text-xl mb-8">
-          IoT certificate: Iget my certificate in IoT with Cisco Networking{" "}
+          IoT certificate: I get my certificate in IoT with Cisco
+          Networking{" "}
         </p>
         <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-xl font-normal mb-8">
-          Lorem ipsum is for people who are too lazy to write copy. But we are
-          not. Here are some more example of beautiful designs I built.
+          Expliquer comment l&apos;IoT et la transformation numérique affectent
+          positivement les entreprises et les administrations publiques.
+          Expliquer l&apos;importance des logiciels et des données pour les
+          entreprises et le monde numériques d&apos;aujourd&apos;hui. Expliquer
+          les bénéfices de l&apos;automatisation et de l&apos;intelligence
+          artificielle pour la transformation numérique. Expliquer le concept de
+          réseau IBN. Expliquer la nécessité de renforcer la sécurité dans
+          l&apos;univers numérique.
         </p>
         <div className="gap-4">
-          <Image
-            src="https://assets.aceternity.com/pro/hero-sections.png"
-            alt="hero template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,42,53,0.06),0_1px_1px_rgba(0,0,0,0.05),0_0_0_1px_rgba(34,42,53,0.04),0_0_4px_rgba(34,42,53,0.08),0_16px_68px_rgba(47,48,55,0.05),0_1px_0_rgba(255,255,255,0.1)_inset]"
-          />
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
         </div>
       </div>
     ),
@@ -149,88 +219,73 @@ export const timelineData = [
     content: (
       <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-xl font-normal mb-8">
-          BAC+4 spécialisation en developpement d'application mobile, gestion de
-          SI et mise en place d'infrastructure IT.{" "}
+          <span className="text-primary font-semibold">BAC +4</span> -
+          Spécialisation en developpement de logiciel, Gestion de SI et mise en
+          place d&apos;infrastructure IT.{" "}
         </p>
-        <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-xl font-normal mb-8">
-          Lorem ipsum is for people who are too lazy to write copy. But we are
-          not. Here are some more example of beautiful designs I built.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "2022",
-    content: (
-      <div>
-        <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-xl font-normal mb-4">
-          Deployed 5 new components on Aceternity today
-        </p>
-        <div className="mb-8 grid grid-cols-2 gap-4">
-          <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xl md:text-xl">
-            <CheckSquareIcon className="bg-green-400 rounded-md" /> Card grid
-            component
-          </div>
-          <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xl md:text-xl">
-            <CheckSquareIcon className="bg-green-400 rounded-md" /> Card grid
-            component
-          </div>
-          <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xl md:text-xl">
-            <CheckSquareIcon className="bg-green-400 rounded-md" /> Startup
-            template Aceternity
-          </div>
-          <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xl md:text-xl">
-            <CheckSquareIcon className="bg-green-400 rounded-md" /> Startup
-            template Aceternity
-          </div>
-        </div>
         <div className="grid grid-cols-2 gap-4">
-          <Image
-            src="https://assets.aceternity.com/pro/hero-sections.png"
-            alt="hero template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow_inset_custom"
-          />
-          <Image
-            src="https://assets.aceternity.com/features-section.png"
-            alt="feature template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow_inset_custom"
-          />
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
+
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
         </div>
       </div>
     ),
   },
-  //  --
   {
-    title: "2023 - 2024",
+    title: "2022 - 2023",
     content: (
       <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-xl font-normal mb-8">
-          BAC+4 spécialisation en developpement d'application mobile, gestion de
-          SI et mise en place d'infrastructure IT.{" "}
+          <span className="text-primary font-semibold">
+            Flutter Certificate
+          </span>{" "}
+          - parcours de{" "}
+          <span className="font-semibold">
+            Génie Logiciel et Administration Réseaux
+          </span>{" "}
+          dans le domaine{" "}
+          <span className="font-semibold">Science et Technologies</span>
         </p>
-        <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-xl font-normal mb-8">
-          Lorem ipsum is for people who are too lazy to write copy. But we are
-          not. Here are some more example of beautiful designs I built.
-        </p>
+
         <div className="grid grid-cols-2 gap-4">
-          <Image
-            src="https://assets.aceternity.com/pro/hero-sections.png"
-            alt="hero template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow_inset_custom"
-          />
-          <Image
-            src="https://assets.aceternity.com/features-section.png"
-            alt="feature template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow_inset_custom]"
-          />
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
         </div>
       </div>
     ),
@@ -241,28 +296,37 @@ export const timelineData = [
     content: (
       <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-xl font-normal mb-8">
-          I get my bachelor in teleinformatics option software ingenner and
-          administrator network.
-        </p>
-        <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-xl font-normal mb-8">
-          Lorem ipsum is for people who are too lazy to write copy. But we are
-          not. Here are some more example of beautiful designs I built.
+          <span className="text-primary font-semibold">
+            Licence en Téléinformatique
+          </span>{" "}
+          - parcours de{" "}
+          <span className="font-semibold">
+            Génie Logiciel et Administration Réseaux
+          </span>{" "}
+          dans le domaine{" "}
+          <span className="font-semibold">Science et Technologies</span>
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <Image
-            src="https://assets.aceternity.com/pro/hero-sections.png"
-            alt="hero template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow_inset_custom"
-          />
-          <Image
-            src="https://assets.aceternity.com/features-section.png"
-            alt="feature template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow_inset_custom"
-          />
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
+          <Link href={"#"} className="relative group">
+            <Image
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
+            />
+            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
         </div>
       </div>
     ),
@@ -271,104 +335,156 @@ export const timelineData = [
 
 // -- Les données des outils que j'utilise au quotidien --
 export const toolsData = [
-  // ============ IDEs =============
   {
     title: "Android Studio",
-    icon: "/android-icon.svg",
+    icon: "/icons/android-icon.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   {
-    title: "PyCharm",
-    icon: "/pycharm.svg",
-    description: "Design and prototyping tool for creating user interfaces.",
+    title: "Git",
+    icon: "/icons/git-icon.svg",
+    description:
+      "Outil de versioning and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   {
     title: "IntelliJ IDEA",
-    icon: "/intellij-idea.svg",
+    icon: "/icons/intellij-idea.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   {
     title: "Vs Code",
-    icon: "/visual-studio-code.svg",
+    icon: "/icons/visual-studio-code.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   // ============= Framworks & Libraries =============
   {
     title: "Next.js",
-    icon: "/nextjs-icon.svg",
+    icon: "/icons/nextjs-icon.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   {
     title: "Tailwind CSS",
-    icon: "/tailwindcss-icon.svg",
+    icon: "/icons/tailwindcss-icon.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   {
     title: "Flutter",
-    icon: "/flutter.svg",
+    icon: "/icons/flutter.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   {
     title: "Spring Boot",
-    icon: "/spring-icon.svg",
+    icon: "/icons/spring-icon.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   // ============ Languages =============
   {
-    title: "Python",
-    icon: "/python.svg",
+    title: "Laravel",
+    icon: "/icons/laravel.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   {
     title: "Java",
-    icon: "/java.svg",
+    icon: "/icons/java.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   {
     title: "Dart",
-    icon: "/dart.svg",
+    icon: "/icons/dart.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   {
     title: "HTML5",
-    icon: "/html-5.svg",
+    icon: "/icons/html-5.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   // =========== Database Tools =============
   {
     title: "Firebase",
-    icon: "/firebase-icon.svg",
+    icon: "/icons/firebase-icon.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   {
     title: "MongoDB",
-    icon: "/mongodb-icon.svg",
+    icon: "/icons/mongodb-icon.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   {
     title: "MySQL",
-    icon: "/mysql.svg",
+    icon: "/icons/mysql.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
   {
     title: "PostgreSQL",
-    icon: "/postgresql.svg",
+    icon: "/icons/postgresql.svg",
     description: "Design and prototyping tool for creating user interfaces.",
     tag: "#design #prototyping #ui-ux",
   },
 ];
+
+// -- Contact Informations --
+const contactInfoData = {
+  header: {
+    badge: "Contacts",
+    title: "Contact with us",
+    description: "If you have any question and feedback contact with us",
+    subtitle:
+      "We're here to help and answer any questions you might have. We look forward to hearing from you.",
+  },
+  contactInfo: [
+    {
+      id: 1,
+      icon: "fa-phone",
+      title: "Phone Number",
+      value: "+1 (555) 123-4567",
+    },
+    {
+      id: 2,
+      icon: "fa-envelope",
+      title: "Email Address",
+      value: "contact@example.com",
+    },
+  ],
+  formFields: [
+    {
+      id: "name",
+      type: "text",
+      name: "name",
+      placeholder: "Name",
+      icon: "fa-user",
+      required: true,
+    },
+    {
+      id: "email",
+      type: "email",
+      name: "email",
+      placeholder: "Email Address",
+      icon: "fa-envelope",
+      required: true,
+    },
+    {
+      id: "message",
+      type: "textarea",
+      name: "message",
+      placeholder: "Message",
+      icon: "fa-comment",
+      rows: 6,
+      required: true,
+    },
+  ],
+};

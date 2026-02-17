@@ -19,7 +19,7 @@ export default function ToolsItem({
       className={cn(
         "flex flex-col lg:border-r py-10 px-6 lg:px-10 relative group/tool",
         (index === 0 || index === 4) && "lg:border-l",
-        index < 4 && "lg:border-b"
+        index < 4 && "lg:border-b",
       )}
     >
       {index < 8 ? (
@@ -37,8 +37,8 @@ export default function ToolsItem({
       />
 
       <div className="text-lg font-bold mb-2 relative z-10">
-        <div className="absolute left-0 inset-y-0 h-6  w-1 rounded-tr-full rounded-br-full bg-neutral-300 transition-all duration-200" />
-        <span className=" px-2 group-hover/tool:translate-x-2 transition duration-200 inline-block text-neutral-800">
+        <div className="absolute left-0 inset-y-0 h-6 w-1 rounded-tr-full rounded-br-full bg-neutral-300 transition-all duration-200" />
+        <span className="cairo-play-bold px-2 group-hover/tool:translate-x-2 transition duration-200 inline-block text-neutral-800">
           {title}
         </span>
       </div>
