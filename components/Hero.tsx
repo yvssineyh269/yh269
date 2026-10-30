@@ -29,9 +29,16 @@ export default function Hero() {
                   Jump on a call
                 </a>
               </Button>
-              <Button size="lg" className="gap-4">
-                <MapPinHouse size={6} />
-                Find me here
+              <Button size="lg" className="gap-4" asChild>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Vouvouni%2C%20Grande%20Comore%2C%20Comores"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Voir Vouvouni sur Google Maps"
+                >
+                  <MapPinHouse size={6} />
+                  Find me here
+                </a>
               </Button>
             </div>
           </div>
