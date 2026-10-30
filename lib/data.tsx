@@ -1,45 +1,81 @@
-import { CheckSquareIcon, Link2Icon, LinkIcon, Share2Icon } from "lucide-react";
-import Image from "next/image";
+import { CheckSquareIcon } from "lucide-react";
 import Link from "next/link";
+import TimelineImage from "@/components/TimelineImage";
 
 // -- Timeline data for my professional journey --
 export const timelineData = [
   // ================= 2026
   {
+    title: "Aujourd'hui",
+    content: (
+      <div>
+        <span className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-sm font-semibold text-emerald-700 mb-4">
+          <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+          En cours
+        </span>
+        {/* TODO: préciser le nom du projet, les technos et le lien */}
+        <p className="text-neutral-800 text-xl md:text-xl font-normal mb-8">
+          Je construis actuellement un nouveau{" "}
+          <span className="font-semibold text-emerald-600">
+            projet personnel
+          </span>{" "}
+          de A à Z : conception, développement et déploiement. Plus de détails
+          très bientôt.
+        </p>
+      </div>
+    ),
+  },
+
+  {
+    title: "2026 · Next Step",
+    content: (
+      <div>
+        <p className="text-neutral-800 text-xl md:text-xl font-normal mb-8">
+          Création de{" "}
+          <Link
+            href={"https://census.company"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-emerald-500 font-semibold uppercase"
+          >
+            Census App
+          </Link>{" "}
+          avec ma startup{" "}
+          <span className="font-semibold">Next Step</span> : une application
+          de gestion de commerce pensée pour les équipes de télévendeurs.
+        </p>
+        {/* TODO: décommenter une fois l'image ajoutée dans public/images */}
+        {/* <div className="grid grid-cols-1 gap-4">
+          <TimelineImage
+            src="/images/census-hero.png"
+            alt="Page d'accueil de Census App"
+            href="https://census.company"
+          />
+        </div> */}
+      </div>
+    ),
+  },
+
+  {
     title: "Janvier 2026",
     content: (
       <div>
         <p className="text-neutral-800 text-xl md:text-xl font-normal mb-8">
-          Developpement et deploiement d&apos;un protype fonctionnelle{" "}
+          Développement et déploiement d&apos;un prototype fonctionnel du site{" "}
           <Link
             href={"https://anaden.vercel.app"}
             className="text-emerald-500 font-semibold uppercase"
           >
             Anaden
           </Link>{" "}
-          website from scratch
+          from scratch.
         </p>
-        <div className="grid grid-cols-2 gap-4">
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
+        <div className="grid grid-cols-1 gap-4">
+          <TimelineImage
+            src="/images/anaden-hero.png"
+            alt="Page d'accueil du site Anaden"
+            href="https://anaden.vercel.app"
+          />
         </div>
       </div>
     ),
@@ -55,26 +91,14 @@ export const timelineData = [
           precedentes réalisations.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
+          <TimelineImage
+            src="https://assets.aceternity.com/pro/hero-sections.png"
+            alt="hero template"
+          />
+          <TimelineImage
+            src="https://assets.aceternity.com/pro/hero-sections.png"
+            alt="hero template"
+          />
         </div>
       </div>
     ),
@@ -85,46 +109,35 @@ export const timelineData = [
     content: (
       <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-xl font-normal mb-8">
-          I usually build a lading page for{" "}
+          I built the landing page for{" "}
           <Link
-            href={"https://darkaredu.com"}
+            href={"https://dakaredu.com"}
             className="font-semibold underline uppercase"
           >
-            DarkarEDU
+            DakarEDU
           </Link>{" "}
-          and I usually update a landing page when we need to update.{" "}
+          and I keep it up to date whenever it needs changes.{" "}
         </p>
         <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-xl font-normal mb-8">
-          I build a LMS platforme named{" "}
+          I built an LMS platform named{" "}
           <Link
             href={"https://sunuschool.net"}
             className="uppercase font-semibold text-emerald-600"
           >
-            sunschoool
+            Sunu-School
           </Link>
         </p>
-        <div className="grid grid-cols-2 gap-4">
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
-
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <TimelineImage
+            src="/images/dakaredu-hero.png"
+            alt="Page d'accueil de DakarEDU"
+            href="https://darkaredu.com"
+          />
+          <TimelineImage
+            src="/images/sunuschool-hero.png"
+            alt="Page d'accueil de Sunu-School"
+            href="https://sunuschool.net"
+          />
         </div>
       </div>
     ),
@@ -155,26 +168,14 @@ export const timelineData = [
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4">
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
+          <TimelineImage
+            src="https://assets.aceternity.com/pro/hero-sections.png"
+            alt="hero template"
+          />
+          <TimelineImage
+            src="https://assets.aceternity.com/pro/hero-sections.png"
+            alt="hero template"
+          />
         </div>
       </div>
     ),
@@ -199,16 +200,10 @@ export const timelineData = [
           l&apos;univers numérique.
         </p>
         <div className="gap-4">
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
+          <TimelineImage
+            src="https://assets.aceternity.com/pro/hero-sections.png"
+            alt="hero template"
+          />
         </div>
       </div>
     ),
@@ -224,27 +219,15 @@ export const timelineData = [
           place d&apos;infrastructure IT.{" "}
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
+          <TimelineImage
+            src="https://assets.aceternity.com/pro/hero-sections.png"
+            alt="hero template"
+          />
 
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
+          <TimelineImage
+            src="https://assets.aceternity.com/pro/hero-sections.png"
+            alt="hero template"
+          />
         </div>
       </div>
     ),
@@ -266,26 +249,14 @@ export const timelineData = [
         </p>
 
         <div className="grid grid-cols-2 gap-4">
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
+          <TimelineImage
+            src="https://assets.aceternity.com/pro/hero-sections.png"
+            alt="hero template"
+          />
+          <TimelineImage
+            src="https://assets.aceternity.com/pro/hero-sections.png"
+            alt="hero template"
+          />
         </div>
       </div>
     ),
@@ -307,26 +278,14 @@ export const timelineData = [
           <span className="font-semibold">Science et Technologies</span>
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
-          <Link href={"#"} className="relative group">
-            <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <Link2Icon className="absolute inset-0 m-auto text-white w-10 h-10 bg-black/40 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
+          <TimelineImage
+            src="https://assets.aceternity.com/pro/hero-sections.png"
+            alt="hero template"
+          />
+          <TimelineImage
+            src="https://assets.aceternity.com/pro/hero-sections.png"
+            alt="hero template"
+          />
         </div>
       </div>
     ),

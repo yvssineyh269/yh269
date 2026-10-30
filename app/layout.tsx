@@ -28,7 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    // suppressHydrationWarning : certaines extensions (ex. data-qb-installed) modifient <html> avant React
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${overpass.variable} ${cairoPlay.variable} antialiased`}
       >

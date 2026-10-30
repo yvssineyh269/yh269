@@ -35,18 +35,20 @@ export default function TimeLiner({
     <div className="w-full bg-white font-sans md:px-10" ref={containerRef}>
       <div className="container mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="cairo-play-bold text-lg md:text-4xl mb-4 text-black max-w-4xl">
-          Changelog from my journey
+          Du code aux produits qui comptent
         </h2>
-        <p className="text-neutral-700 text-sm md:text-base max-w-sm">
-          I have been working on for the past 2 years. Here is a timeline of my
-          journey.
+        <p className="text-neutral-700 text-sm md:text-base max-w-md">
+          Développeur comorien et co-fondateur de Next Step, je conçois des
+          applications web et mobiles qui répondent à de vrais besoins :
+          éducation, administration, commerce. Voici les étapes qui ont
+          construit mon parcours.
         </p>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
-        {timelineData.map((timeline) => (
+        {timelineData.map((timeline, index) => (
           <div
-            key={timeline.title + "-"}
+            key={`${index}-${timeline.title}`}
             className="flex justify-start pt-10 md:pt-40 md:gap-10"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">

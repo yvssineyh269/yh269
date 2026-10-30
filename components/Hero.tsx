@@ -23,9 +23,11 @@ export default function Hero() {
               </p>
             </div>
             <div className="flex flex-row gap-4">
-              <Button size="lg" className="gap-4" variant="outline">
-                <PhoneCall size={6} />
-                Jump on a call
+              <Button size="lg" className="gap-4" variant="outline" asChild>
+                <a href="tel:+2693434850" aria-label="Appeler le +269 343 48 50">
+                  <PhoneCall size={6} />
+                  Jump on a call
+                </a>
               </Button>
               <Button size="lg" className="gap-4">
                 <MapPinHouse size={6} />
